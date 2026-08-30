@@ -51,16 +51,16 @@ export const ProjectContainer = styled.div`
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
+    gap: 40px;
   }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
 
   @media (max-width: 480px) {
-    gap: 32px;
+    gap: 48px;
   }
 `;
 
@@ -82,21 +82,20 @@ export const Thumbnail = styled.img`
   &:hover {
     filter: brightness(0.5);
   }
-
-  @media (max-width: 768px) {
-    margin-bottom: 16px;
-  }
 `;
 
 export const ProjectName = styled.h3`
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
 
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
   @media (max-width: 480px) {
-    font-size: 15px;
+    font-size: 18px;
   }
 `;
 
@@ -108,9 +107,12 @@ export const Description = styled.p`
   line-height: 1.5;
   color: #777;
 
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
   @media (max-width: 480px) {
     margin-bottom: 16px;
-    font-size: 13px;
+    font-size: 15px;
   }
 `;
 
@@ -118,10 +120,6 @@ export const TagContainer = styled.div`
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-
-  @media (max-width: 480px) {
-    gap: 8px;
-  }
 `;
 
 export const Tag = styled.span`
@@ -134,8 +132,12 @@ export const Tag = styled.span`
   font-weight: 400;
   line-height: 1;
 
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
   @media (max-width: 480px) {
     padding: 7px 10px;
-    font-size: 11px;
+    font-size: 12px;
   }
 `;
