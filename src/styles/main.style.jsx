@@ -25,11 +25,6 @@ export const Container = styled.section`
     padding: 32px 32px 0;
     min-height: 60vh;
   }
-
-  @media (max-width: 480px) {
-    padding: 24px 20px 0;
-    min-height: 50vh;
-  }
 `;
 
 export const TopInfo = styled.div`
