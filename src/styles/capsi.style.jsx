@@ -10,15 +10,11 @@ export const Container = styled.section`
   padding: 60px 64px 100px;
 
   @media (max-width: 1024px) {
-    padding: 40px 56px 0;
+    padding: 56px 56px 0;
   }
 
   @media (max-width: 768px) {
-    padding: 32px 32px 0;
-  }
-
-  @media (max-width: 480px) {
-    padding: 24px 20px 0;
+    padding: 48px 32px 0;
   }
 `;
 
