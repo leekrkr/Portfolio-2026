@@ -45,25 +45,32 @@ const GlobalStyle = createGlobalStyle`
   }
     
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #111;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: "SUIT";
-  }
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+body {
+  font-family: "SUIT";
+  background: #111;
+}
 
-  ul {
-    list-style: none;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
 `;
 
 export default GlobalStyle;

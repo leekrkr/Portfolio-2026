@@ -62,11 +62,12 @@ export const InfoItem = styled.span`
 `;
 
 export const Title = styled.h1`
+  container-type: inline-size;
   width: 100%;
   margin-top: auto;
   margin-bottom: 8px;
 
-  font-size: clamp(120px, 22vw, 360px);
+  font-size: clamp(80px, 22cqw, 360px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: 0.01em;

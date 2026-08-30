@@ -42,23 +42,25 @@ export const Title = styled.h2`
 
 export const ProjectContainer = styled.div`
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 38px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
   }
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 48px 28px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    gap: 48px;
+  @media (max-width: 480px) {
+    gap: 32px;
   }
 `;
 
@@ -67,11 +69,12 @@ export const ProjectCard = styled.div`
 `;
 
 export const Thumbnail = styled.img`
+  display: block;
+
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 
-  display: block;
   margin-bottom: 20px;
 
   background: #fff;
