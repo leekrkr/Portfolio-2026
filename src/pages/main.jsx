@@ -9,7 +9,10 @@ export default function MainPage() {
           <InfoItem>2026 PORTFOLIO</InfoItem>
           <InfoItem>LEE JOOYEON</InfoItem>
         </TopInfo>
-        <Title>Portfolio</Title>
+        <Title>
+          <span>Port</span>
+          <span>folio</span>
+        </Title>
       </Container>
     </>
   );

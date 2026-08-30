@@ -20,11 +20,6 @@ export const Container = styled.section`
     padding: 32px 32px 0;
     min-height: 70vh;
   }
-
-  @media (max-width: 600px) {
-    padding: 32px 32px 0;
-    min-height: 60vh;
-  }
 `;
 
 export const TopInfo = styled.div`
@@ -64,18 +59,29 @@ export const InfoItem = styled.span`
 `;
 
 export const Title = styled.h1`
-  container-type: inline-size;
   width: 100%;
   margin-top: auto;
   margin-bottom: 8px;
 
-  font-size: clamp(80px, 22cqw, 360px);
+  font-size: clamp(120px, 22vw, 360px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: 0.01em;
 
-  white-space: nowrap;
   text-align: center;
-
   background: #111;
+
+  span {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 540px) {
+    font-size: clamp(150px, 26vw, 200px);
+    line-height: 0.95;
+
+    span {
+      display: block;
+    }
+  }
 `;
