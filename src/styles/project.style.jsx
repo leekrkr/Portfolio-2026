@@ -88,7 +88,7 @@ export const ProjectName = styled.h3`
   margin: 0 0 4px;
 
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
 
   @media (max-width: 768px) {
@@ -103,7 +103,7 @@ export const Description = styled.p`
   margin: 0 0 20px;
 
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #777;
 
