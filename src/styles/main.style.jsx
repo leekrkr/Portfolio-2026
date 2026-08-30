@@ -18,7 +18,7 @@ export const Container = styled.section`
 
   @media (max-width: 768px) {
     padding: 32px 32px 0;
-    min-height: 85vh;
+    min-height: 87vh;
   }
 `;
 
