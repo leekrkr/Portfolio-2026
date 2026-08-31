@@ -53,7 +53,8 @@ export const TopInfo = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 40px;
-    font-size: 13px;
+    top: 32px;
+    font-size: 11px;
   }
 
   @media (max-width: 480px) {

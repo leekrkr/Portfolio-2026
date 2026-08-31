@@ -49,16 +49,17 @@ export const ProjectContainer = styled.div`
   gap: 38px;
 
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 28px;
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
   }
 
   @media (max-width: 480px) {
+    grid-template-columns: 1fr;
     gap: 32px;
   }
 `;
@@ -90,11 +91,8 @@ export const ProjectName = styled.h3`
   font-weight: 600;
   line-height: 1.4;
 
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
@@ -106,9 +104,6 @@ export const Description = styled.p`
   line-height: 1.5;
   color: #777;
 
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
   @media (max-width: 480px) {
     margin-bottom: 16px;
     font-size: 15px;
