@@ -2,31 +2,38 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
+  max-width: 1850px; // 폭 제한 추가
+  margin: 0 auto; // 중앙 정렬
   min-height: 100vh;
-
-  background: #111;
-  color: #fff;
 
   display: flex;
   flex-direction: column;
 
-  padding: 40px 64px 0;
+  color: #fff;
+
+  padding: 50px 64px 0;
 
   @media (max-width: 1024px) {
     padding: 40px 56px 0;
   }
 
   @media (max-width: 768px) {
-    padding: 32px 32px 0;
+    padding: 32px 48px 0;
     min-height: 87vh;
+  }
+
+  @media (max-width: 480px) {
+    padding: 32px 36px 0;
   }
 `;
 
 export const TopInfo = styled.div`
   position: fixed;
   top: 40px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 1850px;
   z-index: 100;
 
   display: flex;
@@ -45,43 +52,15 @@ export const TopInfo = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 0 32px;
-    font-size: 11px;
+    padding: 0 48px;
+    font-size: 13px;
   }
 
   @media (max-width: 480px) {
-    padding: 0 20px;
+    padding: 0 36px;
   }
 `;
 
 export const InfoItem = styled.span`
   background: #111;
-`;
-
-export const Title = styled.h1`
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: 8px;
-
-  font-size: clamp(120px, 22vw, 360px);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: 0.01em;
-
-  text-align: center;
-  background: #111;
-
-  span {
-    display: inline;
-    white-space: nowrap;
-  }
-
-  @media (max-width: 540px) {
-    font-size: clamp(150px, 26vw, 200px);
-    line-height: 0.95;
-
-    span {
-      display: block;
-    }
-  }
 `;

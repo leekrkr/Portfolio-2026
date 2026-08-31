@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
+  max-width: 1850px; // 폭 제한
+  margin: 0 auto; // 화면 중앙 정렬
   min-height: 100vh;
 
-  background: #111;
-  color: #fff;
-
   padding: 170px 64px 100px;
+
+  color: #fff;
 
   @media (max-width: 1024px) {
     padding: 120px 56px 80px;
   }
 
   @media (max-width: 768px) {
-    padding: 100px 32px 64px;
+    padding: 100px 48px 64px;
   }
 
   @media (max-width: 480px) {
-    padding: 88px 20px 56px;
+    padding: 88px 36px 56px;
   }
 `;
 

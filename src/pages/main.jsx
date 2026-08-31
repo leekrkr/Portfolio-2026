@@ -1,4 +1,4 @@
-import { Container, TopInfo, InfoItem, Title } from "../styles/main.style";
+import { Container, TopInfo, InfoItem } from "../styles/main.style";
 
 export default function MainPage() {
   return (
@@ -9,10 +9,6 @@ export default function MainPage() {
           <InfoItem>2026 PORTFOLIO</InfoItem>
           <InfoItem>LEE JOOYEON</InfoItem>
         </TopInfo>
-        <Title>
-          <span>Port</span>
-          <span>folio</span>
-        </Title>
       </Container>
     </>
   );
