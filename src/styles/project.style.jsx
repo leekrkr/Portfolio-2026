@@ -15,11 +15,11 @@ export const Container = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 100px 48px 64px;
+    padding: 100px 40px 64px;
   }
 
   @media (max-width: 480px) {
-    padding: 88px 36px 56px;
+    padding: 88px 24px 56px;
   }
 `;
 

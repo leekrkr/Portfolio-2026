@@ -18,12 +18,12 @@ export const Container = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 32px 48px 0;
+    padding: 32px 40px 0;
     min-height: 87vh;
   }
 
   @media (max-width: 480px) {
-    padding: 32px 36px 0;
+    padding: 32px 24px 0;
   }
 `;
 
@@ -52,12 +52,12 @@ export const TopInfo = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 0 48px;
+    padding: 0 40px;
     font-size: 13px;
   }
 
   @media (max-width: 480px) {
-    padding: 0 36px;
+    padding: 0 24px;
   }
 `;
 
