@@ -1,30 +1,103 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  width: 100%;
-  max-width: 1850px; // 폭 제한 추가
-  margin: 0 auto; // 중앙 정렬
-  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
+  min-height: 100vh;
 
   color: #fff;
 
-  padding: 50px 64px 0;
-
-  @media (max-width: 1024px) {
-    padding: 40px 56px 0;
-  }
-
   @media (max-width: 768px) {
-    padding: 32px 40px 0;
     min-height: 87vh;
   }
+`;
 
-  @media (max-width: 480px) {
-    padding: 32px 24px 0;
-  }
+export const Background = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+  pointer-events: none;
+`;
+
+export const HoverBackground = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+  pointer-events: none;
+
+  opacity: ${({ $show }) => ($show ? 1 : 0)};
+  transition: opacity 0.3s ease;
+`;
+
+export const HoverArea1 = styled.div`
+  position: absolute;
+
+  top: 28%;
+  left: 54%;
+  transform: translateX(-50%);
+
+  width: 18%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  z-index: 20;
+  cursor: pointer;
+
+  /* 위치 확인용 */
+  /* background: rgba(255, 0, 0, 0.3); */
+`;
+
+export const HoverArea2 = styled.div`
+  position: absolute;
+
+  top: 57%;
+  left: 4.5%;
+
+  width: 19%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  z-index: 20;
+  cursor: pointer;
+
+  /* 위치 확인용 */
+  /* background: rgba(255, 0, 0, 0.3); */
+`;
+
+export const HoverArea3 = styled.div`
+  position: absolute;
+
+  top: 74%;
+  right: 10%;
+
+  width: 19%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  z-index: 20;
+  cursor: pointer;
+
+  /* 위치 확인용 */
+  /* background: rgba(255, 0, 0, 0.3); */
 `;
 
 export const TopInfo = styled.div`
@@ -32,6 +105,7 @@ export const TopInfo = styled.div`
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+
   width: 100%;
   max-width: 1850px;
   z-index: 100;
@@ -42,18 +116,17 @@ export const TopInfo = styled.div`
 
   padding: 0 64px;
 
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
-
-  background: transparent;
+  color: #777;
 
   @media (max-width: 1024px) {
     padding: 0 56px;
   }
 
   @media (max-width: 768px) {
-    padding: 0 40px;
     top: 32px;
+    padding: 0 40px;
     font-size: 11px;
   }
 
@@ -62,6 +135,36 @@ export const TopInfo = styled.div`
   }
 `;
 
+export const LeftInfo = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 12px;
+  }
+`;
+
 export const InfoItem = styled.span`
+  white-space: nowrap;
   background: #111;
+`;
+
+export const Dot = styled.span`
+  width: 8px;
+  height: 8px;
+
+  flex-shrink: 0;
+  border-radius: 50%;
+
+  background: #4cff9a;
+
+  @media (max-width: 768px) {
+    width: 6px;
+    height: 6px;
+  }
 `;
