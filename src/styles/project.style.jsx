@@ -6,7 +6,7 @@ export const Container = styled.section`
   margin: 0 auto; // 화면 중앙 정렬
   min-height: 100vh;
 
-  padding: 170px 64px 100px;
+  padding: 200px 64px 100px;
 
   color: #fff;
 
@@ -15,11 +15,11 @@ export const Container = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 100px 40px 64px;
+    padding: 80px 40px 64px;
   }
 
   @media (max-width: 480px) {
-    padding: 88px 24px 56px;
+    padding: 50px 24px 56px;
   }
 `;
 
@@ -32,12 +32,12 @@ export const Title = styled.h2`
 
   @media (max-width: 768px) {
     margin-bottom: 32px;
-    font-size: 40px;
+    font-size: 44px;
   }
 
   @media (max-width: 480px) {
     margin-bottom: 28px;
-    font-size: 34px;
+    font-size: 36px;
   }
 `;
 

@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import BackIcon from "../assets/icons/back.svg";
-import { Container, Icon, Title } from "../styles/capsi.style";
+import {
+  Container,
+  Icon,
+  Title,
+  SubTitle,
+} from "../styles/projectDetail.style";
 
 export default function CapsiPage() {
   return (
@@ -10,6 +15,7 @@ export default function CapsiPage() {
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>CAPSI</Title>
+        <SubTitle>CAPSY 앱 구축 프로젝트</SubTitle>
       </Container>
     </>
   );

@@ -10,15 +10,11 @@ export const Container = styled.section`
   padding: 60px 64px 100px;
 
   @media (max-width: 1024px) {
-    padding: 40px 56px 0;
+    padding: 56px 56px 0;
   }
 
   @media (max-width: 768px) {
-    padding: 32px 32px 0;
-  }
-
-  @media (max-width: 480px) {
-    padding: 24px 20px 0;
+    padding: 48px 32px 0;
   }
 `;
 
@@ -30,9 +26,17 @@ export const Icon = styled.img`
 `;
 
 export const Title = styled.h2`
-  margin: 0 0 44px;
+  margin: 0 0 24px;
 
   font-size: 52px;
   font-weight: 600;
+  line-height: 1;
+`;
+
+export const SubTitle = styled.h2`
+  margin: 0 0 44px;
+
+  font-size: 17px;
+  font-weight: 300;
   line-height: 1;
 `;
