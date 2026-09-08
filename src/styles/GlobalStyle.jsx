@@ -66,7 +66,7 @@ body,
 
 body {
   font-family: "SUIT";
-  background: #111;
+  background: #0d0d0d;
 }
 
 a {

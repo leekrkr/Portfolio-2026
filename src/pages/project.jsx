@@ -17,7 +17,9 @@ import {
 export default function ProjectPage() {
   return (
     <Container>
-      <Title>Contents.</Title>
+      <Title>
+        Contents<span>.</span>
+      </Title>
 
       <ProjectContainer>
         <Link to="/project1">

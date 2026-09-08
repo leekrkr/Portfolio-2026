@@ -6,7 +6,7 @@ export const Container = styled.section`
   margin: 0 auto; // 화면 중앙 정렬
   min-height: 100vh;
 
-  padding: 200px 64px 100px;
+  padding: 170px 64px 100px;
 
   color: #fff;
 
@@ -29,6 +29,10 @@ export const Title = styled.h2`
   font-size: 52px;
   font-weight: 500;
   line-height: 1;
+
+  span {
+    color: #4cff9a;
+  }
 
   @media (max-width: 768px) {
     margin-bottom: 32px;

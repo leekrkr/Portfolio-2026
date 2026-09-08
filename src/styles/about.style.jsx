@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutSection = styled.section`
   width: 100%;
-  background: #0d0d0d;
+
   color: #fff;
 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
