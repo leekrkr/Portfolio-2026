@@ -27,7 +27,7 @@ export default function CapsiPage() {
   return (
     <>
       <Container>
-        <Link to="/">
+        <Link to="/#projects">
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>CAPSI</Title>

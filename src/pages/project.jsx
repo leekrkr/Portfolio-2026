@@ -17,7 +17,7 @@ import {
 
 export default function ProjectPage() {
   return (
-    <Container>
+    <Container id="projects">
       <Title>
         Contents<span>.</span>
       </Title>
@@ -59,7 +59,11 @@ export default function ProjectPage() {
           </ProjectCard>
         </Link>
 
-        <Link to="/project4">
+        <a
+          href="https://howkiki2026.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ProjectCard>
             <Thumbnail src={howkikiImg} alt="HOWKIKI" />
             <ProjectName>HOWKIKI</ProjectName>
@@ -69,7 +73,7 @@ export default function ProjectPage() {
               <Tag>PUBLISHING</Tag>
             </TagContainer>
           </ProjectCard>
-        </Link>
+        </a>
       </ProjectContainer>
     </Container>
   );

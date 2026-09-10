@@ -28,7 +28,7 @@ export default function AntiPage() {
   return (
     <>
       <Container>
-        <Link to="/">
+        <Link to="/#projects">
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>ANTI</Title>

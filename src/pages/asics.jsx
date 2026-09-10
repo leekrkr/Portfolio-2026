@@ -23,7 +23,7 @@ export default function AsicsPage() {
   return (
     <>
       <Container>
-        <Link to="/">
+        <Link to="/#projects">
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>ASICS</Title>
