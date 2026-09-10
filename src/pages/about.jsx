@@ -72,11 +72,11 @@ export default function About() {
                 <InfoContent>
                   <InfoEntry>
                     <InfoTitle>이화여자대학교 컴퓨터공학과</InfoTitle>
-                    <InfoSub>졸업예정 ㅣ</InfoSub>
+                    <InfoSub>졸업예정 ㅣ 2027.02</InfoSub>
                   </InfoEntry>
                   <InfoEntry>
                     <InfoTitle>이화여자대학교 융합콘텐츠학과</InfoTitle>
-                    <InfoSub>복수전공 졸업예정 ㅣ</InfoSub>
+                    <InfoSub>복수전공 졸업예정 ㅣ 2027.02</InfoSub>
                   </InfoEntry>
                 </InfoContent>
               </InfoBlock>
