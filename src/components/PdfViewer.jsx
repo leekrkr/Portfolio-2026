@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
@@ -8,43 +8,47 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url,
 ).toString();
 
-function PdfViewer({ file }) {
-  const [numPages, setNumPages] = useState(null);
+export default function PdfViewer({ file }) {
   const [pageNumber, setPageNumber] = useState(1);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.clientWidth);
+      }
+    };
+
+    updateWidth();
+
+    window.addEventListener("resize", updateWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
+  }, []);
 
   return (
     <div
+      ref={containerRef}
       style={{
-        display: "flex",
-        justifyContent: "center", // 가로 가운데 정렬
+        width: "100%",
+        margin: 0,
+        padding: 0,
+        overflow: "hidden",
       }}
     >
-      <Document file={file}>
-        <Page
-          pageNumber={pageNumber}
-          width={1000}
-          canvasBackground="transparent"
-        />
+      <Document file={file} loading={null}>
+        {containerWidth > 0 && (
+          <Page
+            pageNumber={pageNumber}
+            width={containerWidth}
+            canvasBackground="transparent"
+            loading={null}
+          />
+        )}
       </Document>
-
-      {numPages && (
-        <div>
-          <button onClick={() => setPageNumber((p) => Math.max(1, p - 1))}>
-            이전
-          </button>
-          <span>
-            {" "}
-            {pageNumber} / {numPages}{" "}
-          </span>
-          <button
-            onClick={() => setPageNumber((p) => Math.min(numPages, p + 1))}
-          >
-            다음
-          </button>
-        </div>
-      )}
     </div>
   );
 }
-
-export default PdfViewer;

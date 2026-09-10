@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 100vh;
 
-  background: #111;
+  background: #0d0d0d;
   color: #fff;
 
-  padding: 60px 64px 100px;
+  padding: 60px 64px 0px;
 
   @media (max-width: 1024px) {
     padding: 56px 56px 0;

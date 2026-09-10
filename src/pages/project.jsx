@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import capsiImg from "../assets/images/thumbnail1.png";
 import antiImg from "../assets/images/thumbnail2.png";
 import asicsImg from "../assets/images/thumbnail3.png";
+import howkikiImg from "../assets/images/thumbnail4.png";
 import {
   Container,
   Title,
@@ -60,7 +61,7 @@ export default function ProjectPage() {
 
         <Link to="/project4">
           <ProjectCard>
-            <Thumbnail />
+            <Thumbnail src={howkikiImg} alt="HOWKIKI" />
             <ProjectName>HOWKIKI</ProjectName>
             <Description>HOWKIKI 챗봇/웹 설계 및 개발</Description>
             <TagContainer>
