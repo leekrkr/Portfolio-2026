@@ -34,7 +34,7 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h2`
-  margin: 0 0 44px;
+  margin: 0 0 64px;
 
   font-size: 17px;
   font-weight: 300;
