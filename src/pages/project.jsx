@@ -9,6 +9,7 @@ import {
   ProjectContainer,
   ProjectCard,
   Thumbnail,
+  DescriptionContainer,
   ProjectName,
   Description,
   TagContainer,
@@ -26,8 +27,10 @@ export default function ProjectPage() {
         <Link to="/project1">
           <ProjectCard>
             <Thumbnail src={capsiImg} alt="CAPSY" />
-            <ProjectName>CAPSY</ProjectName>
-            <Description>CAPSY 앱 구축 프로젝트</Description>
+            <DescriptionContainer>
+              <ProjectName>CAPSY</ProjectName>
+              <Description>CAPSY 앱 구축 프로젝트</Description>
+            </DescriptionContainer>
             <TagContainer>
               <Tag>UXUI</Tag>
             </TagContainer>
@@ -37,10 +40,12 @@ export default function ProjectPage() {
         <Link to="/project2">
           <ProjectCard>
             <Thumbnail src={antiImg} alt="ANTI" />
-            <ProjectName>ANTI MUSEUM</ProjectName>
-            <Description>
-              ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트
-            </Description>
+            <DescriptionContainer>
+              <ProjectName>ANTI MUSEUM</ProjectName>
+              <Description>
+                ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트
+              </Description>
+            </DescriptionContainer>
             <TagContainer>
               <Tag>BRANDING</Tag>
               <Tag>UXUI</Tag>
@@ -51,8 +56,10 @@ export default function ProjectPage() {
         <Link to="/project3">
           <ProjectCard>
             <Thumbnail src={asicsImg} alt="ASICS" />
-            <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
-            <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
+            <DescriptionContainer>
+              <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
+              <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
+            </DescriptionContainer>
             <TagContainer>
               <Tag>UXUI</Tag>
             </TagContainer>
@@ -66,8 +73,11 @@ export default function ProjectPage() {
         >
           <ProjectCard>
             <Thumbnail src={howkikiImg} alt="HOWKIKI" />
-            <ProjectName>HOWKIKI</ProjectName>
-            <Description>HOWKIKI 챗봇/웹 설계 및 개발</Description>
+            <DescriptionContainer>
+              <ProjectName>HOWKIKI</ProjectName>
+              <Description>HOWKIKI 챗봇/웹 설계 및 개발</Description>
+              <Description>기여도 : Design 100% / Frontend 100%</Description>
+            </DescriptionContainer>
             <TagContainer>
               <Tag>UXUI</Tag>
               <Tag>PUBLISHING</Tag>

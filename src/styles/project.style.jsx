@@ -88,6 +88,10 @@ export const Thumbnail = styled.img`
   }
 `;
 
+export const DescriptionContainer = styled.div`
+  height: 92px;
+`;
+
 export const ProjectName = styled.h3`
   margin: 0 0 4px;
 
@@ -101,7 +105,7 @@ export const ProjectName = styled.h3`
 `;
 
 export const Description = styled.p`
-  margin: 0 0 20px;
+  margin: 0 0 4px;
 
   font-size: 14px;
   font-weight: 400;
@@ -109,7 +113,6 @@ export const Description = styled.p`
   color: #777;
 
   @media (max-width: 480px) {
-    margin-bottom: 16px;
     font-size: 15px;
   }
 `;
