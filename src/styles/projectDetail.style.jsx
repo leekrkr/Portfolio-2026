@@ -52,7 +52,7 @@ export const Description = styled.div`
   color: #777;
 `;
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.a`
   width: 150px;
   height: 55px;
   padding: 0 26px;
