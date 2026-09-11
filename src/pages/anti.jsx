@@ -22,6 +22,7 @@ import {
   Icon,
   Title,
   SubTitle,
+  SubTitleContainer,
 } from "../styles/projectDetail.style";
 
 export default function AntiPage() {
@@ -32,7 +33,9 @@ export default function AntiPage() {
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>ANTI</Title>
-        <SubTitle>ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트</SubTitle>
+        <SubTitleContainer>
+          <SubTitle>ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트</SubTitle>
+        </SubTitleContainer>
       </Container>
       <PdfViewer file={AntiCover} />
       <PdfViewer file={Anti1} />

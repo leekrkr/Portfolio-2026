@@ -65,25 +65,19 @@ export default function ProjectPage() {
             </TagContainer>
           </ProjectCard>
         </Link>
-
-        <a
-          href="https://howkiki2026.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link to="/project4">
           <ProjectCard>
             <Thumbnail src={howkikiImg} alt="HOWKIKI" />
             <DescriptionContainer>
               <ProjectName>HOWKIKI</ProjectName>
               <Description>HOWKIKI 챗봇/웹 설계 및 개발</Description>
-              <Description>기여도 : Design 100% / Frontend 100%</Description>
             </DescriptionContainer>
             <TagContainer>
               <Tag>UXUI</Tag>
               <Tag>PUBLISHING</Tag>
             </TagContainer>
           </ProjectCard>
-        </a>
+        </Link>
       </ProjectContainer>
     </Container>
   );

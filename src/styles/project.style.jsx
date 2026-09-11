@@ -89,7 +89,7 @@ export const Thumbnail = styled.img`
 `;
 
 export const DescriptionContainer = styled.div`
-  height: 92px;
+  height: 70px;
 `;
 
 export const ProjectName = styled.h3`

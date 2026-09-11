@@ -32,10 +32,83 @@ export const Title = styled.h2`
   line-height: 1;
 `;
 
-export const SubTitle = styled.h2`
-  margin: 0 0 64px;
+export const SubTitleContainer = styled.h2`
+  margin-bottom: 48px;
+`;
 
-  font-size: 17px;
+export const SubTitle = styled.h2`
+  margin: ${({ $contribution }) => ($contribution ? "0 0 24px" : "0 0 8px")};
+
+  font-size: ${({ $contribution }) => ($contribution ? "15px" : "17px")};
+  font-weight: ${({ $contribution }) => ($contribution ? "400" : "300")};
+  line-height: 1.6;
+`;
+
+export const Description = styled.div`
+  font-size: 15px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.6;
+
+  color: #777;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 150px;
+  height: 55px;
+  padding: 0 26px;
+
+  margin-top: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #fff;
+  color: #fff;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #4cff9a;
+  }
+
+  &:hover img:first-child {
+    opacity: 0;
+  }
+
+  &:hover img:last-child {
+    opacity: 1;
+  }
+`;
+
+export const ButtonText = styled.span`
+  font-size: 18px;
+  font-weight: 400;
+`;
+
+export const ArrowWrapper = styled.div`
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+`;
+
+export const ButtonArrow = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 20px;
+  height: 20px;
+
+  opacity: 1;
+`;
+
+export const ButtonArrowHover = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 20px;
+  height: 20px;
+
+  opacity: 0;
 `;

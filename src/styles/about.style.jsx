@@ -62,7 +62,7 @@ export const Highlight = styled.span`
 export const BodyText = styled.p`
   font-size: 15px;
   line-height: 1.7;
-  color: #999;
+  color: #777;
   margin: 0;
 `;
 

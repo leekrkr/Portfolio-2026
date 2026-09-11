@@ -61,7 +61,7 @@ export default function About() {
                     <InfoTitle>이주연</InfoTitle>
                   </InfoEntry>
                   <InfoEntry>
-                    <InfoText>010-1234-5678</InfoText>
+                    <InfoText>010-4149-9780</InfoText>
                     <InfoText>jooyn328@gmail.com</InfoText>
                   </InfoEntry>
                 </InfoContent>

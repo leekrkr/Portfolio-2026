@@ -21,6 +21,7 @@ import {
   Icon,
   Title,
   SubTitle,
+  SubTitleContainer,
 } from "../styles/projectDetail.style";
 
 export default function CapsiPage() {
@@ -31,7 +32,9 @@ export default function CapsiPage() {
           <Icon src={BackIcon} alt="back" />
         </Link>
         <Title>CAPSI</Title>
-        <SubTitle>CAPSY 앱 구축 프로젝트</SubTitle>
+        <SubTitleContainer>
+          <SubTitle>CAPSY 앱 구축 프로젝트</SubTitle>
+        </SubTitleContainer>
       </Container>
       <PdfViewer file={CapsiCover} />
       <PdfViewer file={Capsi1} />
