@@ -20,8 +20,8 @@ export const Container = styled.section`
 export const BackWrapper = styled.div`
   position: relative;
 
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 
   margin-bottom: 48px;
 
@@ -38,8 +38,8 @@ export const ButtonBack = styled.img`
   position: absolute;
   inset: 0;
 
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 
   object-fit: contain;
 
@@ -50,8 +50,8 @@ export const ButtonActiveBack = styled.img`
   position: absolute;
   inset: 0;
 
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 
   object-fit: contain;
 
