@@ -17,9 +17,12 @@ import Anti13 from "../assets/pdf/anti/2-13.pdf";
 import Anti14 from "../assets/pdf/anti/2-14.pdf";
 import Anti15 from "../assets/pdf/anti/2-15.pdf";
 import BackIcon from "../assets/icons/back.svg";
+import BackActiveIcon from "../assets/icons/back-active.svg";
 import {
   Container,
-  Icon,
+  BackWrapper,
+  ButtonBack,
+  ButtonActiveBack,
   Title,
   SubTitle,
   SubTitleContainer,
@@ -29,9 +32,12 @@ export default function AntiPage() {
   return (
     <>
       <Container>
-        <Link to="/#projects">
-          <Icon src={BackIcon} alt="back" />
-        </Link>
+        <BackWrapper>
+          <Link to="/#projects">
+            <ButtonBack src={BackIcon} alt="back" />
+            <ButtonActiveBack src={BackActiveIcon} alt="back" />
+          </Link>
+        </BackWrapper>
         <Title>ANTI</Title>
         <SubTitleContainer>
           <SubTitle>ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트</SubTitle>

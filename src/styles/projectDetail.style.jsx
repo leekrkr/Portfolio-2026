@@ -17,11 +17,45 @@ export const Container = styled.section`
   }
 `;
 
-export const Icon = styled.img`
+export const BackWrapper = styled.div`
+  position: relative;
+
   width: 28px;
   height: 28px;
 
   margin-bottom: 48px;
+
+  &:hover img:first-child {
+    opacity: 0;
+  }
+
+  &:hover img:last-child {
+    opacity: 1;
+  }
+`;
+
+export const ButtonBack = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+
+  opacity: 1;
+`;
+
+export const ButtonActiveBack = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+
+  opacity: 0;
 `;
 
 export const Title = styled.h2`

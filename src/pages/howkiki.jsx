@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import BackIcon from "../assets/icons/back.svg";
+import BackActiveIcon from "../assets/icons/back-active.svg";
 import ArrowIcon from "../assets/icons/arrow.svg";
 import ArrowActiveIcon from "../assets/icons/arrow-active.svg";
 import {
   Container,
-  Icon,
+  BackWrapper,
+  ButtonBack,
+  ButtonActiveBack,
   Title,
   SubTitleContainer,
   SubTitle,
@@ -20,9 +23,12 @@ export default function HowkikiPage() {
   return (
     <>
       <Container>
-        <Link to="/#projects">
-          <Icon src={BackIcon} alt="back" />
-        </Link>
+        <BackWrapper>
+          <Link to="/#projects">
+            <ButtonBack src={BackIcon} alt="back" />
+            <ButtonActiveBack src={BackActiveIcon} alt="back" />
+          </Link>
+        </BackWrapper>
         <Title>HowKIKI</Title>
         <SubTitleContainer>
           <SubTitle>HOWKIKI 챗봇/웹 설계 및 개발</SubTitle>

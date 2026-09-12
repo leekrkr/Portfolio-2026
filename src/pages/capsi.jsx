@@ -16,9 +16,12 @@ import Capsi12 from "../assets/pdf/capsi/1-12.pdf";
 import Capsi13 from "../assets/pdf/capsi/1-13.pdf";
 import Capsi14 from "../assets/pdf/capsi/1-14.pdf";
 import BackIcon from "../assets/icons/back.svg";
+import BackActiveIcon from "../assets/icons/back-active.svg";
 import {
   Container,
-  Icon,
+  BackWrapper,
+  ButtonBack,
+  ButtonActiveBack,
   Title,
   SubTitle,
   SubTitleContainer,
@@ -28,9 +31,12 @@ export default function CapsiPage() {
   return (
     <>
       <Container>
-        <Link to="/#projects">
-          <Icon src={BackIcon} alt="back" />
-        </Link>
+        <BackWrapper>
+          <Link to="/#projects">
+            <ButtonBack src={BackIcon} alt="back" />
+            <ButtonActiveBack src={BackActiveIcon} alt="back" />
+          </Link>
+        </BackWrapper>
         <Title>CAPSI</Title>
         <SubTitleContainer>
           <SubTitle>CAPSY 앱 구축 프로젝트</SubTitle>
