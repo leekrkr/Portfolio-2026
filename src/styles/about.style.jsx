@@ -146,7 +146,7 @@ export const InfoLabel = styled.div`
 export const InfoContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 `;
 
 export const InfoEntry = styled.div`
@@ -156,9 +156,10 @@ export const InfoEntry = styled.div`
 `;
 
 export const InfoTitle = styled.div`
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   color: #fff;
+  line-height: 1.5;
 `;
 
 export const InfoSub = styled.div`
@@ -168,6 +169,7 @@ export const InfoSub = styled.div`
 
 export const InfoText = styled.div`
   font-size: 15px;
-  color: #ccc;
+  font-weight: 400;
+  color: #fff;
   line-height: 1.6;
 `;
