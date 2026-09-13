@@ -20,7 +20,15 @@ import {
   ButtonActiveBack,
   Title,
   SubTitle,
-  SubTitleContainer,
+  ProjectType,
+  ProjectInfoContainer,
+  ProjectDescription,
+  InfoTitle,
+  Description,
+  ProjectMeta,
+  MetaItem,
+  MetaTitle,
+  MetaText,
 } from "../styles/projectDetail.style";
 
 export default function AsicsPage() {
@@ -34,12 +42,29 @@ export default function AsicsPage() {
           </Link>
         </BackWrapper>
         <Title>ASICS</Title>
-        <SubTitleContainer>
-          <SubTitle>
-            신제품 및 콜라보 발매 정보 탐색 경험을 개선한 ASICS 웹사이트 리뉴얼
-            프로젝트
-          </SubTitle>
-        </SubTitleContainer>
+        <ProjectType>—</ProjectType>
+        <SubTitle>ASICS Website UX/UI Redesign Project</SubTitle>
+        <ProjectInfoContainer>
+          <ProjectDescription>
+            <InfoTitle>콜라보 정보를 더 쉽고 빠르게, asics와 함께</InfoTitle>
+            <Description>
+              ASICS는 다양한 브랜드와 협업을 이어가고 있지만 현재 웹사이트는
+              발매 정보와 협업 콘텐츠를 효과적으로 전달하지 못하고 있습니다. 본
+              프로젝트는 메인 페이지와 Launch Calendar를 리디자인하여 더 쉽고
+              직관적인 탐색 경험을 제안했습니다.
+            </Description>
+          </ProjectDescription>
+          <ProjectMeta>
+            <MetaItem>
+              <MetaTitle>Contribution</MetaTitle>
+              <MetaText>기여도 100% 개인프로젝트</MetaText>
+            </MetaItem>
+            <MetaItem>
+              <MetaTitle>Duration</MetaTitle>
+              <MetaText>2026.07 - 2026.08</MetaText>
+            </MetaItem>
+          </ProjectMeta>
+        </ProjectInfoContainer>
       </Container>
       <PdfViewer file={AsicsCover} />
       <PdfViewer file={Asics1} />

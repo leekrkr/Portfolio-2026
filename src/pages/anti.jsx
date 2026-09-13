@@ -25,7 +25,15 @@ import {
   ButtonActiveBack,
   Title,
   SubTitle,
-  SubTitleContainer,
+  ProjectType,
+  ProjectInfoContainer,
+  ProjectDescription,
+  InfoTitle,
+  Description,
+  ProjectMeta,
+  MetaItem,
+  MetaTitle,
+  MetaText,
 } from "../styles/projectDetail.style";
 
 export default function AntiPage() {
@@ -39,9 +47,40 @@ export default function AntiPage() {
           </Link>
         </BackWrapper>
         <Title>ANTI</Title>
-        <SubTitleContainer>
-          <SubTitle>ANTI 뮤지엄 브랜딩 및 웹사이트 구축 프로젝트</SubTitle>
-        </SubTitleContainer>
+        <ProjectType>—</ProjectType>
+        <SubTitle>ANTI Museum Branding & Website Design</SubTitle>
+        <ProjectInfoContainer>
+          <ProjectDescription>
+            <InfoTitle>도시의 흐름 속, 더 가까운 예술</InfoTitle>
+            <Description>
+              anti는 도시의 흐름 속에서 가볍게 방문하기 좋은 밤의 미술관이자
+              시간·공간·규범의 장벽을 허물고 누구나 자유롭게 예술을 경험할 수
+              있는 이동형, 야간형 예술 플랫폼입니다. '오늘 밤, 예술은 더
+              가까이'라는 슬로건 아래 고정된 공간과 정형화된 관람 방식에서
+              벗어나 도시의 밤과 일상 속에서 자연스럽게 예술을 만나는 새로운
+              문화 경험을 제안합니다.
+            </Description>
+          </ProjectDescription>
+          <ProjectMeta>
+            <MetaItem>
+              <MetaTitle>Contribution</MetaTitle>
+              <MetaText>
+                Branding
+                <br />
+                기여도 20% 팀프로젝트
+              </MetaText>
+              <MetaText>
+                Design
+                <br />
+                기여도 100% 개인프로젝트
+              </MetaText>
+            </MetaItem>
+            <MetaItem>
+              <MetaTitle>Duration</MetaTitle>
+              <MetaText>2026.05 - 2026.06</MetaText>
+            </MetaItem>
+          </ProjectMeta>
+        </ProjectInfoContainer>
       </Container>
       <PdfViewer file={AntiCover} />
       <PdfViewer file={Anti1} />
