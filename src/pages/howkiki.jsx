@@ -10,6 +10,7 @@ import {
   ButtonActiveBack,
   Title,
   SubTitle,
+  InfoTitle,
   Description,
   ButtonContainer,
   ButtonText,
@@ -44,12 +45,14 @@ export default function HowkikiPage() {
         </SubTitle>
         <ProjectInfoContainer>
           <ProjectDescription>
+            <InfoTitle>주문부터 문의까지, 하나로</InfoTitle>
             <Description>
-              기존에 직접 디자인 및 프론트엔드 개발을 진행했던 프로젝트를
-              바탕으로,
+              HowKIKI는 1인 음식점에서 발생하는 주문·결제·문의 과정을 하나의
+              시스템으로 연결한 매장 운영 서비스입니다.
               <br />
-              UI/UX를 새롭게 개선하고 퍼블리싱했습니다. 현재 API 만료로 인해
-              실시간 채팅 및 알림 기능은 제한되어 있습니다.
+              고객의 반복적인 요청은 스스로 해결할 수 있도록 하고, 사장님은
+              주문과 요청을 실시간으로 확인하여 고객 응대에 대한 부담을 줄이고
+              매장 운영에 더욱 집중할 수 있도록 돕습니다.
             </Description>
           </ProjectDescription>
           <ProjectMeta>

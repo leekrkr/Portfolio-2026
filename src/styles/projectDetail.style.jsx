@@ -6,7 +6,7 @@ export const Container = styled.section`
   background: #0d0d0d;
   color: #fff;
 
-  padding: 60px 64px 140px;
+  padding: 60px 64px 120px;
 
   @media (max-width: 1024px) {
     padding: 56px;
@@ -74,7 +74,7 @@ export const Description = styled.p`
   font-weight: 300;
   line-height: 1.7;
 
-  color: #999;
+  color: #6c6c6cff;
 `;
 
 export const ProjectMeta = styled.div`
@@ -156,7 +156,7 @@ export const ButtonContainer = styled.a`
   height: 55px;
   padding: 0 26px;
 
-  margin-top: 80px;
+  margin-top: 100px;
 
   display: flex;
   align-items: center;
