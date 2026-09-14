@@ -74,7 +74,7 @@ export const Description = styled.p`
   font-weight: 300;
   line-height: 1.7;
 
-  color: #6c6c6cff;
+  color: #aaa;
 `;
 
 export const ProjectMeta = styled.div`
