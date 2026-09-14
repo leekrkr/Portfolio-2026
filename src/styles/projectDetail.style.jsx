@@ -182,7 +182,7 @@ export const ButtonContainer = styled.a`
 
 export const ButtonText = styled.span`
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 `;
 
 export const ArrowWrapper = styled.div`
