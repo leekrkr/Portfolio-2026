@@ -48,10 +48,13 @@ export default function AsicsPage() {
           <ProjectDescription>
             <InfoTitle>콜라보 정보를 더 쉽고 빠르게, asics와 함께</InfoTitle>
             <Description>
-              ASICS는 다양한 브랜드와 협업을 이어가고 있지만 현재 웹사이트는
-              발매 정보와 협업 콘텐츠를 효과적으로 전달하지 못하고 있습니다. 본
-              프로젝트는 메인 페이지와 Launch Calendar를 리디자인하여 더 쉽고
-              직관적인 탐색 경험을 제안했습니다.
+              ASICS는 다양한 브랜드와 협업을 이어가고 있지만 사용자들은 현재
+              웹사이트에서 이와 관련된 정보를 획득하지
+              <br />
+              못하고 있습니다. 본 프로젝트는 메인 페이지와 Launch Calendar를
+              리디자인하여 고도화된 정보 접근성으로
+              <br />
+              사용자들에게 탐색 편의를 제공합니다.
             </Description>
           </ProjectDescription>
           <ProjectMeta>

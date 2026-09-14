@@ -53,7 +53,7 @@ export default function AntiPage() {
           <ProjectDescription>
             <InfoTitle>도시의 흐름 속, 더 가까운 예술</InfoTitle>
             <Description>
-              anti는 도시의 흐름 속에서 가볍게 방문하기 좋은 밤의 미술관이자
+              ANTI는 도시의 흐름 속에서 가볍게 방문하기 좋은 밤의 미술관이자
               시간·공간·규범의 장벽을 허물고 누구나 자유롭게 예술을 경험할 수
               있는 이동형, 야간형 예술 플랫폼입니다. '오늘 밤, 예술은 더
               가까이'라는 슬로건 아래 고정된 공간과 정형화된 관람 방식에서

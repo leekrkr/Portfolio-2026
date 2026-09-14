@@ -52,8 +52,8 @@ export default function CapsiPage() {
           <ProjectDescription>
             <InfoTitle>옷은 많지만, 입을 옷이 없다고 느껴질 때</InfoTitle>
             <Description>
-              CAPSI는 반복되는 코디 고민과 비효율적인 옷장 관리를 해결하기 위해
-              만들어졌습니다.
+              CAPSI는 반복되는 코디 고민과 비효율적인 옷장 관리로 인한
+              사용자들의 불편을 해결하기 위해 만들어졌습니다.
               <br />
               보유한 옷을 체계적으로 관리하고 새로운 조합을 추천하여 매일의
               스타일링을 더욱 쉽고 즐겁게 만들어 줍니다.
