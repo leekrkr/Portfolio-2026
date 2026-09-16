@@ -17,6 +17,8 @@ import Capsi13 from "../assets/pdf/capsi/1-13.pdf";
 import Capsi14 from "../assets/pdf/capsi/1-14.pdf";
 import BackIcon from "../assets/icons/back.svg";
 import BackActiveIcon from "../assets/icons/back-active.svg";
+import ArrowIcon from "../assets/icons/arrow-grey.svg";
+import ArrowActiveIcon from "../assets/icons/arrow-active.svg";
 import {
   Container,
   BackWrapper,
@@ -33,6 +35,10 @@ import {
   MetaItem,
   MetaTitle,
   MetaText,
+  MetaLink,
+  MetaArrowWrapper,
+  MetaArrow,
+  MetaArrowHover,
 } from "../styles/projectDetail.style";
 
 export default function CapsiPage() {
@@ -67,6 +73,20 @@ export default function CapsiPage() {
             <MetaItem>
               <MetaTitle>Duration</MetaTitle>
               <MetaText>2026.01 - 2026.04</MetaText>
+            </MetaItem>
+            <MetaItem>
+              <MetaTitle>Full Project</MetaTitle>
+              <MetaLink
+                href="https://www.behance.net/gallery/255787215/CAPSI-"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View
+                <MetaArrowWrapper>
+                  <MetaArrow src={ArrowIcon} alt="" />
+                  <MetaArrowHover src={ArrowActiveIcon} alt="" />
+                </MetaArrowWrapper>
+              </MetaLink>
             </MetaItem>
           </ProjectMeta>
         </ProjectInfoContainer>

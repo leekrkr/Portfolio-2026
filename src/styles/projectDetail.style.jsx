@@ -106,6 +106,61 @@ export const MetaText = styled.p`
   color: #aaa;
 `;
 
+export const MetaLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+
+  color: #aaa;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #4cff9a;
+  }
+
+  &:hover img:first-child {
+    opacity: 0;
+  }
+
+  &:hover img:last-child {
+    opacity: 1;
+  }
+`;
+
+export const MetaArrowWrapper = styled.span`
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+`;
+
+export const MetaArrow = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 1;
+`;
+
+export const MetaArrowHover = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0;
+`;
+
 export const BackWrapper = styled.div`
   position: relative;
 

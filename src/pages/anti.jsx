@@ -18,6 +18,8 @@ import Anti14 from "../assets/pdf/anti/2-14.pdf";
 import Anti15 from "../assets/pdf/anti/2-15.pdf";
 import BackIcon from "../assets/icons/back.svg";
 import BackActiveIcon from "../assets/icons/back-active.svg";
+import ArrowIcon from "../assets/icons/arrow-grey.svg";
+import ArrowActiveIcon from "../assets/icons/arrow-active.svg";
 import {
   Container,
   BackWrapper,
@@ -34,6 +36,10 @@ import {
   MetaItem,
   MetaTitle,
   MetaText,
+  MetaLink,
+  MetaArrowWrapper,
+  MetaArrow,
+  MetaArrowHover,
 } from "../styles/projectDetail.style";
 
 export default function AntiPage() {
@@ -78,6 +84,20 @@ export default function AntiPage() {
             <MetaItem>
               <MetaTitle>Duration</MetaTitle>
               <MetaText>2026.05 - 2026.06</MetaText>
+            </MetaItem>
+            <MetaItem>
+              <MetaTitle>Full Project</MetaTitle>
+              <MetaLink
+                href="https://www.behance.net/gallery/255787451/ANTI-MUSEUM-Branding-Website-Design"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View
+                <MetaArrowWrapper>
+                  <MetaArrow src={ArrowIcon} alt="" />
+                  <MetaArrowHover src={ArrowActiveIcon} alt="" />
+                </MetaArrowWrapper>
+              </MetaLink>
             </MetaItem>
           </ProjectMeta>
         </ProjectInfoContainer>
