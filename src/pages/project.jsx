@@ -28,8 +28,8 @@ export default function ProjectPage() {
           <ProjectCard>
             <Thumbnail src={capsiImg} alt="CAPSY" />
             <DescriptionContainer>
-              <ProjectName>CAPSY</ProjectName>
-              <Description>CAPSY 앱 구축 프로젝트</Description>
+              <ProjectName>CAPSI</ProjectName>
+              <Description>CAPSI 앱 구축 프로젝트</Description>
             </DescriptionContainer>
             <TagContainer>
               <Tag>UXUI</Tag>
