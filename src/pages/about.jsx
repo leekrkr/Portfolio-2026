@@ -99,15 +99,15 @@ export default function About() {
                 <InfoContent>
                   <InfoEntry>
                     <InfoTitle>그래픽기술자격(GTQ) 1급</InfoTitle>
-                    <InfoSub>한국생산성본부(KPC) ㅣ 2025.03</InfoSub>
+                    <InfoSub>한국생산성본부(KPC) ㅣ 2025.04</InfoSub>
                   </InfoEntry>
                   <InfoEntry>
                     <InfoTitle>그래픽기술자격 일러스트(GTQi) 1급</InfoTitle>
-                    <InfoSub>한국생산성본부(KPC) ㅣ 2025.07</InfoSub>
+                    <InfoSub>한국생산성본부(KPC) ㅣ 2025.08</InfoSub>
                   </InfoEntry>
                   <InfoEntry>
                     <InfoTitle>정보처리기사</InfoTitle>
-                    <InfoSub>한국산업인력공단 ㅣ 2026.07</InfoSub>
+                    <InfoSub>한국산업인력공단 ㅣ 2026.09</InfoSub>
                   </InfoEntry>
                 </InfoContent>
               </InfoBlock>
