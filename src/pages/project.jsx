@@ -39,6 +39,19 @@ export default function ProjectPage() {
 
         <Link to="/project2">
           <ProjectCard>
+            <Thumbnail src={asicsImg} alt="ASICS" />
+            <DescriptionContainer>
+              <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
+              <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
+            </DescriptionContainer>
+            <TagContainer>
+              <Tag>UXUI</Tag>
+            </TagContainer>
+          </ProjectCard>
+        </Link>
+
+        <Link to="/project3">
+          <ProjectCard>
             <Thumbnail src={antiImg} alt="ANTI" />
             <DescriptionContainer>
               <ProjectName>ANTI MUSEUM</ProjectName>
@@ -53,18 +66,6 @@ export default function ProjectPage() {
           </ProjectCard>
         </Link>
 
-        <Link to="/project3">
-          <ProjectCard>
-            <Thumbnail src={asicsImg} alt="ASICS" />
-            <DescriptionContainer>
-              <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
-              <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
-            </DescriptionContainer>
-            <TagContainer>
-              <Tag>UXUI</Tag>
-            </TagContainer>
-          </ProjectCard>
-        </Link>
         <Link to="/project4">
           <ProjectCard>
             <Thumbnail src={howkikiImg} alt="HOWKIKI" />
