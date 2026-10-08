@@ -93,7 +93,11 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const ProjectName = styled.h3`
-  margin: 0 0 4px;
+  margin: 0 0 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
   font-size: 16px;
   font-weight: 600;
@@ -102,6 +106,19 @@ export const ProjectName = styled.h3`
   @media (max-width: 480px) {
     font-size: 17px;
   }
+`;
+
+export const FeaturedTag = styled.span`
+  padding: 4px 8px;
+  border-radius: 100px;
+
+  background: #f2f2f2;
+  color: #111;
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.04em;
 `;
 
 export const Description = styled.p`

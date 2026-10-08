@@ -11,6 +11,7 @@ import {
   Thumbnail,
   DescriptionContainer,
   ProjectName,
+  FeaturedTag,
   Description,
   TagContainer,
   Tag,
@@ -28,7 +29,9 @@ export default function ProjectPage() {
           <ProjectCard>
             <Thumbnail src={capsiImg} alt="CAPSY" />
             <DescriptionContainer>
-              <ProjectName>CAPSI</ProjectName>
+              <ProjectName>
+                CAPSI <FeaturedTag>FEATURED</FeaturedTag>
+              </ProjectName>
               <Description>CAPSI 앱 구축 프로젝트</Description>
             </DescriptionContainer>
             <TagContainer>
@@ -41,7 +44,9 @@ export default function ProjectPage() {
           <ProjectCard>
             <Thumbnail src={asicsImg} alt="ASICS" />
             <DescriptionContainer>
-              <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
+              <ProjectName>
+                ASICS WEBSITE REDESIGN <FeaturedTag>FEATURED</FeaturedTag>
+              </ProjectName>
               <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
             </DescriptionContainer>
             <TagContainer>
