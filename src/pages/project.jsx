@@ -74,8 +74,8 @@ export default function ProjectPage() {
               <Description>HOWKIKI 챗봇/웹 설계 및 개발</Description>
             </DescriptionContainer>
             <TagContainer>
-              <Tag>UXUI</Tag>
               <Tag>PUBLISHING</Tag>
+              <Tag>UXUI</Tag>
             </TagContainer>
           </ProjectCard>
         </Link>
