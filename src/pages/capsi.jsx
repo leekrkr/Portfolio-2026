@@ -17,6 +17,7 @@ import Capsi13 from "../assets/pdf/capsi/1-13.pdf";
 import Capsi14 from "../assets/pdf/capsi/1-14.pdf";
 import Capsi15 from "../assets/pdf/capsi/1-15.pdf";
 import Capsi16 from "../assets/pdf/capsi/1-16.pdf";
+import Capsi17 from "../assets/pdf/capsi/1-17.pdf";
 import BackIcon from "../assets/icons/back.svg";
 import BackActiveIcon from "../assets/icons/back-active.svg";
 import ArrowIcon from "../assets/icons/arrow-grey.svg";
@@ -96,6 +97,7 @@ export default function CapsiPage() {
       <PdfViewer file={CapsiCover} />
       <PdfViewer file={Capsi1} />
       <PdfViewer file={Capsi2} />
+      <PdfViewer file={Capsi17} />
       <PdfViewer file={Capsi3} />
       <PdfViewer file={Capsi4} />
       <PdfViewer file={Capsi5} />
