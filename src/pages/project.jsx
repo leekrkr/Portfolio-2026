@@ -29,9 +29,7 @@ export default function ProjectPage() {
           <ProjectCard>
             <Thumbnail src={capsiImg} alt="CAPSY" />
             <DescriptionContainer>
-              <ProjectName>
-                CAPSI <FeaturedTag>FEATURED</FeaturedTag>
-              </ProjectName>
+              <ProjectName>CAPSI</ProjectName>
               <Description>CAPSI 앱 구축 프로젝트</Description>
             </DescriptionContainer>
             <TagContainer>
@@ -42,21 +40,6 @@ export default function ProjectPage() {
 
         <Link to="/project2">
           <ProjectCard>
-            <Thumbnail src={asicsImg} alt="ASICS" />
-            <DescriptionContainer>
-              <ProjectName>
-                ASICS WEBSITE REDESIGN <FeaturedTag>FEATURED</FeaturedTag>
-              </ProjectName>
-              <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
-            </DescriptionContainer>
-            <TagContainer>
-              <Tag>UXUI</Tag>
-            </TagContainer>
-          </ProjectCard>
-        </Link>
-
-        <Link to="/project3">
-          <ProjectCard>
             <Thumbnail src={antiImg} alt="ANTI" />
             <DescriptionContainer>
               <ProjectName>ANTI MUSEUM</ProjectName>
@@ -66,6 +49,19 @@ export default function ProjectPage() {
             </DescriptionContainer>
             <TagContainer>
               <Tag>BRANDING</Tag>
+              <Tag>UXUI</Tag>
+            </TagContainer>
+          </ProjectCard>
+        </Link>
+
+        <Link to="/project3">
+          <ProjectCard>
+            <Thumbnail src={asicsImg} alt="ASICS" />
+            <DescriptionContainer>
+              <ProjectName>ASICS WEBSITE REDESIGN</ProjectName>
+              <Description>ASICS 웹사이트 리뉴얼 프로젝트</Description>
+            </DescriptionContainer>
+            <TagContainer>
               <Tag>UXUI</Tag>
             </TagContainer>
           </ProjectCard>
