@@ -7,25 +7,20 @@ export const Container = styled.section`
   width: 100%;
   max-width: 1850px;
   margin: 0 auto;
-  min-height: 100vh;
+
+  aspect-ratio: 1920 / 1080; /* 실제 이미지 비율로 변경 */
 
   color: #fff;
-
-  @media (max-width: 768px) {
-    min-height: 87vh;
-  }
 `;
 
 export const Background = styled.img`
-  position: absolute;
-  inset: 0;
+  display: block;
 
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
 
-  z-index: 0;
   pointer-events: none;
 `;
 
@@ -36,7 +31,7 @@ export const HoverBackground = styled.img`
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
 
   z-index: 1;
   pointer-events: none;
